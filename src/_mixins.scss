@@ -1,0 +1,17 @@
+@mixin tablet{
+    @media screen and (max-width: 786px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width: 280px){
+        @content;
+    }
+}
+
+@media (max-width: 800px) {
+    .product-section {
+      flex-direction: column;
+    }
+}

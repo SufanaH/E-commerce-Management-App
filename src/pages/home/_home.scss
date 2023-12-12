@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins';
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+
+  .bar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .cards-container {
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        width: 30%;
+        margin-bottom: 20px;
+
+        .card-body {
+          padding: 20px;
+
+          .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #f8b500;
+          }
+
+          .card-title {
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          .card-text {
+            font-size: 14px;
+            color: #606060;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 3;
+    padding: 20px;
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      input[type='text'] {
+        padding: 7px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 200px;
+        font-size: 14px;
+        color: #333;
+
+        &:focus {
+          outline: none;
+          border-color: #67676764;
+          box-shadow: 0 0 5px rgba(69, 70, 70, 0.5);
+        }
+      }
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .product {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 30px;
+
+      .product-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 180px;
+        text-align: center;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          margin-bottom: 5px;
+          font-size: 12px;
+          text-align: left;
+        }
+        .footer-card {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            float: left;
+            color: #f8b500;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 2rem 0 0 0;
+          }
+          .cart-icon {
+            color: #66666646;
+            margin-left: 50px;
+            font-size: 24px;
+            align-self: flex-end;
+            float: left;
+            transition: color 0.3s;
+            &:hover {
+              color: #f8b500;
+            }
+          }
+          .wishlist-icon {
+            color: #66666646;
+            font-size: 22px;
+            align-self: flex-end;
+            padding: 2rem 0 0 0;
+            &:hover {
+              color: #eb7f7f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 786px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 280px) {
+    @content;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-section {
+    flex-direction: column;
+  }
+}
+
+
+.pagination {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 5px; 
+}
+
+.page-numbers button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.page-numbers button.active {
+  border-radius:50%;
+  background-color: #ddd; 
+}

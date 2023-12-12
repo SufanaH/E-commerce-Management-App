@@ -1,0 +1,124 @@
+@tailwind components;
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins';
+}
+
+.main-content {
+  max-width: 1500px;
+  font-family: 'Poppins';
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 1440px;
+    .main-content {
+      max-width: 1440px;
+    }
+  }
+  .nav-container {
+    max-width: 1440px;
+  }
+}
+
+.heroSection {
+  padding: 1rem;
+
+  .heroSection-box {
+    padding-top: 7rem;
+    float: center;
+    .heroSection-box-right {
+      padding: 0 0 0 2rem;
+    }
+  }
+}
+
+.login-container {
+  .login-box {
+    margin-top: 5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    .login-form {
+      padding: 1rem 2rem 2rem 2rem;
+      text-align: left;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.contact-container {
+  .contact-box {
+    margin-top: 5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    .contact-form {
+      padding: 1rem 2rem 2rem 2rem;
+      text-align: left;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+$sidebar-width: 250px;
+.dashboard-container {
+  padding-top: 5rem;
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .admin-sidebar {
+    color: #f5f5f5;
+    padding: 20px;
+    background-color: #dddcdc;
+    border-radius: 20px;
+    width: $sidebar-width;
+    ul {
+      display: list-item;
+    }
+  }
+
+  .main-admin-dashboard {
+    padding: 20px;
+    width: 100%;
+
+    button {
+      background-color: #f8b500;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border-style: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 10px 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #bc9103;
+        box-shadow: 0 0 2px #5c5c5c;
+      }
+    }
+  }
+}
+
+
+.budge{
+  content:attr(value);
+  font-size:12px;
+  color: #fff;
+  background: red;
+  border-radius:50%;
+  padding: 3px 6px;
+  position:relative;
+  left:-8px;
+  top:-14px;
+  opacity:0.9;
+}

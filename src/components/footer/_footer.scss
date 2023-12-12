@@ -1,0 +1,79 @@
+.grid-footer {
+  background-color: #f5f5f5;
+  padding: 10px 30px 150px 0px;
+  text-align: center;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 2fr;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+
+  .grid-item {
+    padding: 10px;
+    p {
+      color: #8a8a8a;
+    }
+  }
+  .subscribe-label {
+    padding: 10px;
+    .p-newsletter {
+      font-size: 12px;
+      color: #8a8a8a;
+    }
+  }
+
+  input[type='email'] {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  button {
+    background-color: #323232;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      color: white;
+      background-color: #6e6e6e;
+      box-shadow: 0 0 2px #5c5c5c;
+    }
+  }
+}
+
+.contacting {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #4a4a4a;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f8b500;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacting {
+    flex-direction: column;
+
+    a {
+      margin: 10px 0;
+    }
+  }
+}
