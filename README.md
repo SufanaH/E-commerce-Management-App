@@ -2,7 +2,7 @@
 
 Welcome to the E-commerce Management System App, a powerful and intuitive web application built with React.js using Vite. This app utilizes React, TypeScript, Redux/Redux Toolkit for state management, and CSS/SASS for styling.
 
-[![Watch the Demo]](eCommerceApp.mov)
+[![Watch the Demo](Rise.png)](eCommerceApp.mov)
 
 
 ## Table of Contents
